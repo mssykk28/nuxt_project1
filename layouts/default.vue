@@ -81,6 +81,16 @@ export default {
           title: 'Inspire',
           to: '/inspire',
         },
+        {
+          icon: 'mdi-format-align-justify',
+          title: 'Article',
+          to: '/article',
+        },
+        {
+          icon: 'mdi-account',
+          title: 'Profile',
+          to: '/profile',
+        },
       ],
       miniVariant: false,
       right: true,
