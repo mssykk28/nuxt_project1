@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: 'MyPage',
+  name: "MyPage",
   computed: {
     username() {
       if (this.$auth.$state.user && this.$auth.$state.user.name) {

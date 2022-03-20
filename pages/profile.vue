@@ -108,6 +108,6 @@
 
 <script>
 export default {
-  name: 'ProfilePage',
+  name: "ProfilePage",
 }
 </script>

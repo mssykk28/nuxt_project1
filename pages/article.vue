@@ -14,6 +14,6 @@
 
 <script>
 export default {
-  name: 'ArticlePage',
+  name: "ArticlePage",
 }
 </script>

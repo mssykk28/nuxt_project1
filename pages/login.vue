@@ -6,10 +6,10 @@
 
 <script>
 export default {
-  name: 'LoginPage',
+  name: "LoginPage",
   methods: {
     login() {
-      this.$auth.loginWith('auth0')
+      this.$auth.loginWith("auth0")
     },
   },
 }

@@ -27,7 +27,7 @@
     <v-app-bar :clipped-left="clipped" fixed app>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-btn icon @click.stop="miniVariant = !miniVariant">
-        <v-icon>mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
+        <v-icon>mdi-{{ `chevron-${miniVariant ? "right" : "left"}` }}</v-icon>
       </v-btn>
       <v-btn icon @click.stop="clipped = !clipped">
         <v-icon>mdi-application</v-icon>
@@ -64,7 +64,7 @@
 
 <script>
 export default {
-  name: 'DefaultLayout',
+  name: "DefaultLayout",
   data() {
     return {
       clipped: false,
@@ -72,40 +72,40 @@ export default {
       fixed: false,
       items: [
         {
-          icon: 'mdi-apps',
-          title: 'Welcome',
-          to: '/',
+          icon: "mdi-apps",
+          title: "Welcome",
+          to: "/",
         },
         {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire',
+          icon: "mdi-chart-bubble",
+          title: "Inspire",
+          to: "/inspire",
         },
         {
-          icon: 'mdi-format-align-justify',
-          title: 'Article',
-          to: '/article',
+          icon: "mdi-format-align-justify",
+          title: "Article",
+          to: "/article",
         },
         {
-          icon: 'mdi-account',
-          title: 'Profile',
-          to: '/profile',
+          icon: "mdi-account",
+          title: "Profile",
+          to: "/profile",
         },
         {
-          icon: 'mdi-account',
-          title: 'ログイン',
-          to: '/login',
+          icon: "mdi-account",
+          title: "ログイン",
+          to: "/login",
         },
         {
-          icon: 'mdi-account',
-          title: 'マイページ',
-          to: '/mypage',
+          icon: "mdi-account",
+          title: "マイページ",
+          to: "/mypage",
         },
       ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js',
+      title: "Vuetify.js",
     }
   },
 }
