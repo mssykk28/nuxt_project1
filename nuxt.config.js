@@ -41,12 +41,28 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/auth-next',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
     baseURL: '/',
+  },
+
+  auth: {
+    strategies: {
+      auth0: {
+        domain: 'your domain',
+        clientId: 'your clientId',
+      },
+    },
+    redirect: {
+      login: '/login', // 未ログイン時のリダイレクト先
+      logout: '/', // ログアウト処理を実行した直後のリダイレクト先
+      callback: '/callback', // コールバックURL
+      home: '/mypage', // ログイン後に遷移するページ
+    },
   },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify

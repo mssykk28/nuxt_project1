@@ -91,6 +91,16 @@ export default {
           title: 'Profile',
           to: '/profile',
         },
+        {
+          icon: 'mdi-account',
+          title: 'ログイン',
+          to: '/login',
+        },
+        {
+          icon: 'mdi-account',
+          title: 'マイページ',
+          to: '/mypage',
+        },
       ],
       miniVariant: false,
       right: true,
